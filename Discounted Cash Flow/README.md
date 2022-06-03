@@ -4,5 +4,7 @@
 
 **finance_scraper.py** -> Helper functions to retrieve data from financialmodelingprep (useful for fundamental analysis); **Note** that this library is not maintained. However, you can submit an issue and I can come around to fixing any outdated code.
 
+**Intrinsic_Valuation_DCF.ipynb** -> Notebook for useful code related to intrinsic valuation for discounted cash flow analysis. Feel free to follow along by watching the youtube video (link down below!).
+
 **YouTube Video Located** [here](https://youtu.be/AvstCw0_1Vw)
 
