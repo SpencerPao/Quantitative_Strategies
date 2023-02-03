@@ -101,11 +101,9 @@ def get_quote(ticker, key):
 
 def get_industry_multiples():
     """Getting the Industry Multiples value from NYU. """
-    URL = 'http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/vebitda.html'
-    html = requests.get(URL).content
-    df_list = pd.read_html(html)
-    df = df_list[-1]
-    df.columns = df.iloc[1]
+    URL = 'https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/vebitda.html'
+    df = pd.read_html(URL)[0]
+    df = df.rename(columns=df.iloc[1])
     df = df.drop(1)
     df['Industry Name'][0] = 'Category'
     df.iloc[0][0] = 'Category'
